@@ -1,0 +1,174 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+section {
+    padding: 4em 1em;
+    text-align: center;
+}
+
+.section-home {
+    background: linear-gradient(to right, #f4f4f4, #e2e2e2);
+    padding: 6em 1em;
+}
+
+.section-home h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.section-home p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.section-about {
+    background-color: #fff;
+    padding: 4em 1em;
+    border-top: 5px solid #ff6347;
+    border-bottom: 5px solid #ff6347;
+}
+
+.section-about h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.section-about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 1.5em auto;
+    color: #666;
+    text-align: justify;
+}
+
+.section-portfolio {
+    background-color: #f4f4f4;
+    padding: 4em 1em;
+}
+
+.section-portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+    border-bottom: 2px solid #ccc; /* Added bottom border */
+    padding-bottom: 1em; /* Optional: Adds some padding below the border */
+}
+
+#portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio .gallery-item {
+    margin: 1em;
+    width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#portfolio .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#portfolio .gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-contact {
+    background-color: #fff;
+    padding: 4em 1em;
+}
+
+.section-contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 1.5em;
+    padding: 0.7em 1.5em;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e5533d;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
